@@ -1,10 +1,10 @@
-package com.example.springapp;
+package com.example.springapp.controllers;
 import org.springframework.web.bind.RestController;
 import org.springframework.web.bind.GetMapping;
 @RestController
 public class ApiController {
-    @GetMapping("disp")
-    public String Welcome(){
-        return "Welcome String Boot";
+    @GetMapping("/welcome")
+    public String welcome(){
+        return "Welcome String Boot!";
     }
 }
